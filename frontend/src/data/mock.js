@@ -110,3 +110,33 @@ export const agenticAgents = [
   { name: 'Bureau Agent', color: '#1E2A3A' },
   { name: 'Policy Agent', color: '#2DD4BF' }
 ];
+
+export const teamMembers = [
+  {
+    id: 1,
+    name: 'Kritin Agarwal',
+    role: 'CEO',
+    bio: 'Senior Data Scientist at Piramal Finance, IITB.',
+    institutions: ['Piramal', 'IITB'],
+    image: '/kritin.jpeg',
+    linkedin: 'https://www.linkedin.com/in/kritin-agarwal-342306156/'
+  },
+  {
+    id: 2,
+    name: 'Yuvraj Yadav',
+    role: 'CTO',
+    bio: 'Senior Data Scientist at Piramal Finance, IITD.',
+    institutions: ['Piramal', 'IITD'],
+    image: '/yuvraj.jpeg',
+    linkedin: 'https://www.linkedin.com/in/yuvraj-yadav-256b891b4/'
+  },
+  {
+    id: 3,
+    name: 'Yash Shah',
+    role: 'CBO',
+    bio: 'Investment Banker at Barclays, IIMB, IITB.',
+    institutions: ['Barclays', 'IIMB', 'IITB'],
+    image: '/yash.jpeg',
+    linkedin: 'https://www.linkedin.com/in/yash-shah-0908a0188/'
+  }
+];
