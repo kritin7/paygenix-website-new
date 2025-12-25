@@ -5,11 +5,12 @@ require("dotenv").config();
 // Check if we're in development/preview mode (not production build)
 // Craco sets NODE_ENV=development for start, NODE_ENV=production for build
 const isDevServer = process.env.NODE_ENV !== "production";
+const isProduction = process.env.VERCEL_ENV === "production" || process.env.NODE_ENV === "production";
 
 // Environment variable overrides
 const config = {
-  enableHealthCheck: process.env.ENABLE_HEALTH_CHECK === "true",
-  enableVisualEdits: isDevServer, // Only enable during dev server
+  enableHealthCheck: !isProduction && process.env.ENABLE_HEALTH_CHECK === "true",
+  enableVisualEdits: !isProduction && isDevServer, // Only enable during local dev
 };
 
 // Conditionally load visual edits modules only in dev mode
